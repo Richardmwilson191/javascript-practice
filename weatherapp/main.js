@@ -75,7 +75,14 @@ function weatherPosition() {
   weatherContainer.style.visibility = 'visible';
 }
 
-document.getElementById('searchbtn').addEventListener('click', ()=> {
+function handleEnter(event) {
+  // let input = document.getElementById("searchInput");
+  if(event.keyCode === 13) {
+    document.getElementById("searchBtn").click();
+  }
+}
+
+document.getElementById('searchBtn').addEventListener('click', ()=> {
   let searchTerm = document.getElementById('searchInput').value;
   if(searchTerm)
     searchWeather(searchTerm);
