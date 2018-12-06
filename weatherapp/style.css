@@ -8,11 +8,12 @@ body {
   font-family: "Palatino Linotype", "book Antiqua", Palatino, serif;
 }
 #weatherContainer {
-  background-color: rgba(0, 0, 0, 25);
+  background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 5px black;
   padding: 50px;
   border-radius: 10px;
   position: absolute;
+  visibility: hidden;
 }
 #weatherContainer h1 {
   margin: 5px;
@@ -44,5 +45,21 @@ body {
   margin-bottom: 20px;
 }
 #weathermain div {
-  font-size: 
+  display: inline-block;
+}
+#weatherDescriptionHeader {
+  font-size: 2px;
+  vertical-align: 50%;
+}
+#temperature {
+  font-size: 30px;
+  vertical-align: 25%;
+}
+.buttomDetails {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+}
+hr {
+  margin-bottom: 20px;
 }
